@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Outfit&family=Red+Hat+Display:wght@400;500&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--blue: hsl(225, 100%, 98%);
+--blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+}
+body{
+    font-family: "Red Hat Display" sans-serif;
+    /* <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="437"><path fill="#D6E1FF" fill-rule="evenodd" d="M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="375" height="194"><path fill="#D6E1FF" fill-rule="evenodd" d="M-131.808 155.366c97.026 51.512 204.233 51.512 321.62 0 117.388-51.512 223.27-51.512 317.648 0V0h-639.268v155.366z"/></svg> */
+}
+ul{
+    list-style: none;
+}
+p {
+    font-size: 16px;
+}
+.bg__image {
+    background: url("./images/pattern-background-mobile.svg") no-repeat 
+    center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+@media (min-width:768px){
+    .bg__image {
+        background: url(../images/pattern-background-desktop.svg)no-repeat 
+        center/cover ;
+        height: 50vh;
+    }
+}
+.container {
+    width: 500px;
+}
+@media (min-width:420px) {
+    .container{
+    margin-left: 37%;
+   margin-top: 5%; 
+   text-align: center;
+   background-color:white;
+   padding: 10px;
+   border-radius: 5px;
+    }
+}
+
+
+    .container .image img  {
+       width:100%;
+        border-radius: 5px;
+        padding: 10px;
+
+    }
+
+
+ .text  {
+    text-align: center;
+}
+.text h2 {
+    margin:25px  0 10px 0;
+    color: var(--Dark-blue);
+}
+.text p {
+    color: var(--blue);
+    line-height: 2;
+
+}
+.text .test {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+.test .img {
+    background-color: var(--blue);
+    border-radius: 50%;
+}
+ul li {
+   margin-top: 10px;
+}
+ul :first-child{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--Bright-blue);
+    margin-top: -15px;
+}
+ul :last-child {
+    color: var(--blue);
+}
+button {
+    border: none;
+    
+    color: var(--Bright-blue);
+    font-weight: bold;
+ 
+}
+.text > button {
+    background-color: var(--Bright-blue);
+    width: calc(100% - 50px );
+    margin-left: 25px;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+
+}
+.text > button:hover{
+    color: var(--Dark-blue);
+}
+
+
+span a:hover{
+    color: rgb(82, 102, 145);
+}
+.one {
+    margin-top: 15px;
+}
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    margin-left: 15%;
+}
+.attribution a {
+    text-decoration: none;
+}
